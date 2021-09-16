@@ -25,6 +25,9 @@ jobs:
         python -m pip install --upgrade pip
         pip install -r requirements.txt
         if [ -f requirements.txt ]; then pip install -r requirements.txt; fi
+        
     - name: Submit the DAST scan
       run: |
+        export VERACODE_API_KEY_ID="${{secrets.VERACODE_API_ID}}"
+        export VERACODE_API_KEY_SECRET="${{secrets.VERACODE_API_KEY}}"
         python vc-dast.py
