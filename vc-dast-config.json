@@ -1,0 +1,20 @@
+{
+  "name": "Veracode DAST Scan Submission 12345",
+  "scans": [
+    {
+      "scan_config_request": {
+        "target_url": {
+          "url": "http://www.example.com"
+        }
+      }
+    }
+  ],
+  "schedule": {
+    "duration": {
+      "length": 10,
+      "unit": "minute"
+    },
+    "scheduled": true,
+    "now": true
+  }
+}   
