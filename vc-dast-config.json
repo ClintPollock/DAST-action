@@ -1,5 +1,5 @@
 {
-  "name": "Veracode DAST Scan Submission 12345",
+  "name": "Veracode API Analysis 098432424",
   "scans": [
     {
       "scan_config_request": {
@@ -11,10 +11,10 @@
   ],
   "schedule": {
     "duration": {
-      "length": 10,
-      "unit": "minute"
+      "length": 1,
+      "unit": "DAY"
     },
     "scheduled": true,
     "now": true
   }
-}   
+}
