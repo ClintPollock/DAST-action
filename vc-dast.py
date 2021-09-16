@@ -11,7 +11,7 @@ headers = {"User-Agent": "Start DA Scan Example", 'Content-type': 'application/j
 if __name__ == "__main__":
 
     try:
-        contents = open('da_scan.json', 'rb').read()
+        contents = open('vc-dast-config.json', 'rb').read()
         print(contents)
         response = requests.post(api_base + "/analyses", auth=RequestsAuthPluginVeracodeHMAC(), data=contents, headers=headers)
     except requests.RequestException as e:
